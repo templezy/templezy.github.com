@@ -5,42 +5,51 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<div class="row">
+<div class="col-lg-12">
+ 
+    <!-- normal -->
+    <div class="ih-item square effect13 left_to_right"><a href="#">
+        <div class="img"><img src="{{ HOME_PATH }}assets/touxiang2.jpg" alt="img"></div>
+        <div class="info">
+          <h3>First item</h3>
+          <p>你好</p>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+  <div class="col-sm-6">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect1"><a href="#">
+        <div class="spinner"></div>
+        <div class="img"><img src="{{ HOME_PATH }}assets/touxiang2.jpg" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </div></a></div>
+    <!-- end normal -->
+ 
+  </div>
+ 
+  <div class="col-sm-6">
+ 
+    <!-- colored -->
+    <div class="ih-item circle colored effect1"><a href="#">
+        <div class="spinner"></div>
+        <div class="img"><img src="{{ HOME_PATH }}assets/touxiang2.jpg" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </div></a></div>
+    <!-- end colored -->
+ 
+  </div>
+</div>
 
 
