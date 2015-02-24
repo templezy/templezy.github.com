@@ -18,3 +18,16 @@
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
 }
+
+.mgtop{
+    margin-top: 50px;
+}
+
+
+@media(min-width:768px) {
+
+.mgtop{
+    margin-top: 150px;
+}
+
+}
