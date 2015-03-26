@@ -237,6 +237,10 @@
     #blackwoodstyle {
         height: 40vh;
     }
+
+    .contacticon{
+        padding-bottom: 5%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -247,6 +251,8 @@
         /*display: */
     }
 }
+
+
 
 .atext {
     color: black;
