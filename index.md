@@ -43,7 +43,7 @@ tagline: Supporting tagline
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
             <div id="blackwoodstyle" class="col-sm-6" style="background: url('{{ HOME_PATH }}assets/images/nbg.jpg') no-repeat;background-size: cover;text-align: center;">
-                <h1 class="ctext" style="padding-top: 30%;">Innovation distinguishes between a leader and a follower.</h1>
+                <h1 class="ctext modifypad">Innovation distinguishes between a leader and a follower.</h1>
 
             </div>
             <div class="col-sm-6" style="height:100%;">
@@ -136,7 +136,7 @@ tagline: Supporting tagline
                 </div>
             </div>
             <div id="blackwoodstyle" class="col-sm-6 blockstyle" style="background: url('{{ HOME_PATH }}assets/images/nbg.jpg') no-repeat;background-size: cover;text-align: center;">
-                <h1 class="ctext" style="padding-top: 30%;margin: 0px;">I would trade all of my technology for an afternoon with Socrates.</h1>
+                <h1 class="ctext modifypad" style="margin: 0px;">I would trade all of my technology for an afternoon with Socrates.</h1>
 
             </div>
             <div class="col-sm-12" style="background-color: #5C6E23;height:30vh;text-align: center;background-size: cover;">

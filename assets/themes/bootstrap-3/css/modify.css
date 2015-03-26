@@ -90,7 +90,9 @@
     color: white;
     background-color: transparent;
 }
-
+    .modifypad{
+        padding-top: 30%;
+    }
 
 .cusfont {
     font-family: "American Typewriter";
@@ -241,6 +243,9 @@
     .contacticon{
         padding-bottom: 5%;
     }
+    .modifypad{
+        padding-top: 30%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -249,6 +254,9 @@
         display: none;
         /*display: none;*/
         /*display: */
+    }
+        .modifypad{
+        padding-top: 15%;
     }
 }
 
