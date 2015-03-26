@@ -32,7 +32,8 @@
       <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     -->
-    <link href="{{ ASSET_PATH }}/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="{{ ASSET_PATH }}/css/animate.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/mynavbar.css" rel="stylesheet">
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -41,7 +42,7 @@
 
 <body>
     <!-- Navbar -->
-    <div id="wrapper" style="background: url('{{ HOME_PATH }}assets/images/cbg2.jpg') no-repeat; background-size: cover;">
+    <div id="wrapper" class="animated fadeInUp" style="background: url('{{ HOME_PATH }}assets/images/cbg2.jpg') no-repeat; background-size: cover;">
         <!-- <img class="img-responsive" style="left: 0;top: 0;position: absolute;" src="{{ HOME_PATH }}assets/images/cbg1.jpg" alt="Royal Enfield Motorcycle, photographed by Renjith Sasidharan"> -->
         <nav class="navbar navbar-default navcus" style="margin: 0px;" role="navigation">
             <div class="navbar-header">
@@ -85,20 +86,17 @@
         </nav>
     </div>
     {{ content }}
-    <div class="col-sm-12">
+    <div class="col-sm-12 animated fadeIn">
         <div class="col-sm-1"></div>
-        <div class="col-sm-10">
-            <div class="wrapper">
-                <div class="col-sm-12" style="text-align: center;padding-top: 1%;padding-bottom: 1%;">
-                    <div class="atext"> © 2015 ALL RIGHTS RESERVED. ADELAIDE GROCERY</div>
+        <center>
+            <div class="col-sm-10">
+                <div class="wrapper">
+                    <div class="col-sm-12" style="text-align: center;padding-top: 2%;padding-bottom: 2%;">
+                        <div class="atext"> © 2015 ALL RIGHTS RESERVED. ADELAIDE GROCERY</div>
+                    </div>
                 </div>
-                <!--  <div class="col-sm-6" style="right:0;top:0;position: absolute;">
-                        <div class="atex">
-                          .
-                        </div>
-                       </div> -->
             </div>
-        </div>
+        </center>
         <div class="col-sm-1"></div>
     </div>
     {% include JB/analytics %}

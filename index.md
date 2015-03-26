@@ -5,7 +5,7 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-<div class="container-fluid">
+<div class="container-fluid animated fadeIn">
     <!-- <div class="col-lg-12" style="padding: 0px;"> -->
     <!--     <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel">
       <ol class="carousel-indicators">

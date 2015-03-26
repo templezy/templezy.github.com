@@ -257,16 +257,9 @@
 }
 
 .atext:hover {
-    color: #5C6E23;
-    text-decoration: none;
-}
-
-.atex {
-    color: black;
-    /*padding-right: 3%;*/
-    
-    font-weight: 200;
-    font-size: 70%;
+        color: black;
+    padding-right: 3%;
+    font-weight: 800;
 }
 
 .pictext {
