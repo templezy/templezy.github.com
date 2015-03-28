@@ -14,29 +14,29 @@ y.parentElement.removeChild(y);
 </script>
 <div class="container-fluid animated fadeIn">
     <div class="col-sm-12" style="display: inline-block;">
-        <h1 style="color:black;float: right;display:inline-block;padding-bottom: 1%;font-weight: 200;">Health and Care</h1>
+        <h1 style="color:black;float: right;display:inline-block;padding-bottom: 1%;font-weight: 200;">Baby Care</h1>
     </div>
     <div class="col-sm-12" style="padding: 0px;">
         <div class="col-sm-4" style="background-color: #1ABC9C;text-align: center;padding-top: 1%;padding-bottom: 1%;">
-            <a class="productanchor" href="#swissetag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Swisse</h1></a>
+            <a class="productanchor" href="#aptamiltag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Aptamil</h1></a>
         </div>
         <div class="col-sm-4" style="background-color: #2980B9;text-align: center;padding-top: 1%;padding-bottom: 1%;">
-            <a class="productanchor" href="#blackmorestag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Blackmores</h1></a>
+            <a class="productanchor" href="#bellamystag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Bellamy's</h1></a>
         </div>
         <div class="col-sm-4" style="background-color: #E74C3C;text-align: center;padding-top: 1%;padding-bottom: 1%;">
-            <a class="productanchor" href="#otherbrandtag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Other Products</h1></a>
+            <a class="productanchor" href="#otherproductstag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Other Products</h1></a>
         </div>
     </div>
     <div class="col-sm-12 tbborder  " style="border-top-color: rgba(26,188,156,0.5);border-bottom-color: rgba(26,188,156,0.5);background-color: rgba(26,188,156,0.3);">
-        <h1 id="swissetag" style="margin-left: 3%;color: black;font-weight: 100;">Swisse</h1>
+        <h1 id="aptamiltag" style="margin-left: 3%;color: black;font-weight: 100;">Aptamil</h1>
         <div class="col-sm-1"></div>
         <div class="col-sm-10 wrapper">
             <div class="row">
 
-                {% for post in site.tags.swisse %}
+                {% for post in site.tags.aptamil %}
                  <div class="col-sm-6 col-md-4">
                     <div class="thumbnail" style="border-radius: 20px;border-color: rgba(26,188,156,0.8);border-width: 2px;margin-top: 5%;">
-                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/swisse/{{post.productimg}}" alt="...">
+                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/aptamil/{{post.productimg}}" alt="...">
                         <div class="caption">
                             <h6 style="color:black;">{{post.productname}}</h6>
                             <!-- <p>This is the decription of the Sleep tablets!!!</p> -->
@@ -53,15 +53,15 @@ y.parentElement.removeChild(y);
         <div class="sol-sm-1"></div>
     </div>
     <div class="col-sm-12 tbborder" style="border-top-color: rgba(41,128,185,0.5);border-bottom-color: rgba(41,128,185,0.5);background-color: rgba(41,128,185,0.3);">
-        <h1 id="blackmorestag" style="margin-left: 3%;color: black;font-weight: 100;">Blackmores</h1>
+        <h1 id="bellamystag" style="margin-left: 3%;color: black;font-weight: 100;">Bellamy's</h1>
            <div class="col-sm-1"></div>
         <div class="col-sm-10 wrapper">
             <div class="row">
 
-                {% for post in site.tags.blackmores %}
+                {% for post in site.tags.bellamys %}
                  <div class="col-sm-6 col-md-4">
                     <div class="thumbnail" style="border-radius: 20px;border-color: rgba(26,188,156,0.8);border-width: 2px;margin-top: 5%;">
-                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/blackmores/{{post.productimg}}" alt="...">
+                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/bellamys/{{post.productimg}}" alt="...">
                         <div class="caption">
                             <h6 style="color:black;">{{post.productname}}</h6>
                             <!-- <p>This is the decription of the Sleep tablets!!!</p> -->
@@ -78,15 +78,15 @@ y.parentElement.removeChild(y);
         <div class="sol-sm-1"></div>
     </div>
     <div class="col-sm-12 tbborder" style="border-top-color: rgba(231,76,60,0.5);border-bottom-color: rgba(231,76,60,0.5);background-color: rgba(231,76,60,0.3);">
-        <h1 id="otherbrandtag" style="margin-left: 3%;color: black;font-weight: 100;">Other Products</h1>
+        <h1 id="otherproductstag" style="margin-left: 3%;color: black;font-weight: 100;">Other Products</h1>
                 <div class="col-sm-1"></div>
         <div class="col-sm-10 wrapper">
             <div class="row">
 
-                {% for post in site.tags.ob %}
+                {% for post in site.tags.otherbabycare %}
                  <div class="col-sm-6 col-md-4">
                     <div class="thumbnail" style="border-radius: 20px;border-color: rgba(26,188,156,0.8);border-width: 2px;margin-top: 5%;">
-                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/otherhc/{{post.productimg}}" alt="...">
+                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/otherbc/{{post.productimg}}" alt="...">
                         <div class="caption">
                             <h6 style="color:black;">{{post.productname}}</h6>
                             <!-- <p>This is the decription of the Sleep tablets!!!</p> -->
