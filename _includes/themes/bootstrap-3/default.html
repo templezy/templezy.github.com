@@ -42,6 +42,8 @@
 </head>
 
 <body>
+    
+    {% if page.language == "en" %}
     <!-- Navbar -->
     <div id="wrapper" class="animated fadeInUp" style="background: url('{{ HOME_PATH }}assets/images/cbg2.jpg') no-repeat; background-size: cover;">
         <!-- <img class="img-responsive" style="left: 0;top: 0;position: absolute;" src="{{ HOME_PATH }}assets/images/cbg1.jpg" alt="Royal Enfield Motorcycle, photographed by Renjith Sasidharan"> -->
@@ -76,8 +78,11 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">English</a></li>
-        <li><a href="#">简体中文</a></li>
+                                        {% for language in site.languages%}
+                      {% if language != page.language %}
+                        <li><a href="/{{language}}/{{page.url_no_language}}">简体中文</a></li>
+                      {% endif %}
+                    {% endfor %}
       </ul>
 
 
@@ -96,6 +101,67 @@
             </div>
         </nav>
     </div>
+    {% else %}
+    <!-- Navbar -->
+    <div id="wrapper" class="animated fadeInUp" style="background: url('{{ HOME_PATH }}assets/images/cbg2.jpg') no-repeat; background-size: cover;">
+        <!-- <img class="img-responsive" style="left: 0;top: 0;position: absolute;" src="{{ HOME_PATH }}assets/images/cbg1.jpg" alt="Royal Enfield Motorcycle, photographed by Renjith Sasidharan"> -->
+        <nav class="navbar navbar-default navcus" style="margin: 0px;" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand navbarbrand" href="{{ HOME_PATH }}">ADGrocery</a> -->
+            </div>
+            <div class="collapse navbar-collapse" style="padding-right: 5%;" id="jb-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left navbaritem">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="/babycare/">母婴产品</a></li>
+                    <li><a href="/healthcare/">保健品</a></li>
+                    <li><a href="/makeup/">化妆品</a></li>
+<!--                     <li><a href="/">Perfume</a></li>
+                    <li><a href="/boots/">Boots</a></li> -->
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CATEGORY <span class="caret"></span></a>
+                        <ul id="dm" class="dropdown-menu animated fadeIn" style="background-color: black;z-index: 9999;" role="menu">
+                            <li><a href="/healthcare/">HEALTH CARE</a></li>
+                            <li><a href="/makeup/">MAKE UP</a></li>
+                            <li><a href="/boots/">BOOTS</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="/contactus/">联系我们</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    {% for language in site.languages%}
+                      {% if language != page.language %}
+                        <li><a href="{{page.url_no_language}}">English</a></li>
+                      {% endif %}
+                    {% endfor %}
+      </ul>
+
+
+            </div>
+            <div id="hid" class="mengban">
+                <div style="padding-top: 10%;padding-bottom: 16%;">
+                    <div style="text-align: center;">
+                        <img src="{{ HOME_PATH }}assets/images/wlogo.png">
+                        <h1 style="font-weight: 100;font-size: 40px;color: white;font-family: 'Arial';">NATURAL AND</h1>
+                        <h1 style="font-weight: 100;font-size: 50px;color: white;font-family: 'Arial';">HAPPINESS</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="hid2" style="text-align: center;padding-bottom: 5%;">
+                <h3 style="font-weight: 100;font-size: 25px;color: white;font-family: 'Arial';">ADGrocery</h3>
+            </div>
+        </nav>
+    </div>
+    {% endif %}
+
+
     {{ content }}
     <div id="rmvft" class="col-sm-12 animated fadeIn">
         <div class="col-sm-1"></div>
