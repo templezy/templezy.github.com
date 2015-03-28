@@ -78,7 +78,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                                        {% for language in site.languages%}
+                    {% for language in site.languages%}
                       {% if language != page.language %}
                         <li><a href="/{{language}}/{{page.url_no_language}}">简体中文</a></li>
                       {% endif %}
