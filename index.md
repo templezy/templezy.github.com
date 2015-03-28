@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ADG
+title: ADGrocery
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
@@ -52,12 +52,12 @@ tagline: Supporting tagline
                         <h1 class="pictext" style="color:black;">Natural</h1>
                     </div>
                     <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/ca1.jpg') no-repeat;">
-                        <h1 class="pictext">HAPPINESS</h1>
+                        <h1 class="pictext">Bring your happiness</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/ca2.jpg') no-repeat;">
-                        <h1 class="pictext">JOY</h1>
+                        <h1 class="pictext">Give you joy</h1>
                     </div>
                     <div class="col-xs-6 blockstyle">
                         <h1 class="pictext" style="color:black;">Laugh</h1>
@@ -120,15 +120,15 @@ tagline: Supporting tagline
             <div class="col-sm-6" style="height:100%;">
                 <div class="row">
                     <div class="col-xs-6 blockstyle">
-                        <h1 class="pictext" style="color:black;">Brillant</h1>
+                        <h1 class="pictext" style="color:black;">Swift</h1>
                     </div>
                     <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/cbg1.jpg') no-repeat;">
-                        <h1 class="pictext">FAST</h1>
+                        <h1 class="pictext">Fast delivery</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/ca3.jpg') no-repeat;">
-                        <h1 class="pictext">SWIFT</h1>
+                        <h1 class="pictext">Brillant choice</h1>
                     </div>
                     <div class="col-xs-6 blockstyle">
                         <h1 class="pictext" style="color:black;">Amazing</h1>
@@ -136,7 +136,7 @@ tagline: Supporting tagline
                 </div>
             </div>
             <div id="blackwoodstyle" class="col-sm-6 blockstyle" style="background: url('{{ HOME_PATH }}assets/images/nbg.jpg') no-repeat;background-size: cover;text-align: center;">
-                <h1 class="ctext modifypad">Products with high quality.</h1>
+                <h1 class="ctext modifypad" style="margin: 0px;">Products with high quality.</h1>
 
             </div>
             <div class="col-sm-12" style="background-color: #5C6E23;height:30vh;text-align: center;background-size: cover;">
@@ -149,7 +149,7 @@ tagline: Supporting tagline
                 </h1>
                 <hr style=" color: white;font-weight: 200;font-size: 200%;margin-left: 25%;margin-right: 25%;padding-bottom: 1%;"></hr>
                 <h1 style="    color: white;font-weight: 100;font-size: 150%;padding-left: 15%;padding-right: 15%;">Set up with three energetic young guys. We focus on the austrlian oversea purchase. If you have any questions, please click the button below to make a contact to us!</h1>
-                <button type="button" class="btn btn-success" style="background-color: transparent;margin-top: 3%;margin-bottom: 5%;">Contact Us</button>
+                <button type="button" class="btn btn-success" onClick="location.href='/contactus/'" style="background-color: transparent;margin-top: 3%;margin-bottom: 5%;">Contact Us</button>
             </div>
 
         </div>
