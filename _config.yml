@@ -34,7 +34,7 @@ production_url : http://username.github.io
 gems : ['jekyll-multiple-languages']
 languages : ["en", "cn"]
 language_default : 'en'
-fill_default_content : ture
+fill_default_content : true
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
