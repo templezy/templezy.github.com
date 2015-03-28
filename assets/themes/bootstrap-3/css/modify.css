@@ -21,6 +21,14 @@
     font-family: "Arial";
 }
 
+.tbborder{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-top: 2%;
+}
+
 .blockstyle {
     background-size: cover;
     height: 30vh;
@@ -260,7 +268,12 @@
     }
 }
 
-
+.productanchor{
+    text-decoration: none;
+}
+.productanchor:hover{
+    text-decoration: none;
+}
 
 .atext {
     color: black;

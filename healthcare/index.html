@@ -1,13 +1,15 @@
 ---
-layout: page
+layout: default
 title: ADG
 ---
 {% include JB/setup %}
 
 <script type="text/javascript">
 var x = document.getElementById("hid");
+// x.style.height = "10px";
 x.parentElement.removeChild(x);
 var y = document.getElementById("hid2");
+
 y.parentElement.removeChild(y);
 </script>
 <div class="container-fluid animated fadeIn">
@@ -15,17 +17,45 @@ y.parentElement.removeChild(y);
         <h1 style="color:black;float: right;display:inline-block;padding-bottom: 1%;font-weight: 200;">Health and Care</h1>
     </div>
     <div class="col-sm-12" style="padding: 0px;">
-    	<div class="col-sm-4" style="background-color: #1ABC9C;text-align: center;">
-    		<h1 style="color:black;font-weight: 100;margin-top: 10px;">Swisse</h1>
-    	</div>
-    	<div class="col-sm-4" style="background-color: #2980B9;text-align: center;">
-    		<h1 style="color:black;font-weight: 100;margin-top: 10px;">Blackmore</h1>	
-    	</div>
-    	<div class="col-sm-4" style="background-color: #E74C3C;text-align: center;">
-    		<h1 style="color:black;font-weight: 100;margin-top: 10px;">Other brands</h1>
-    	</div>
+        <div class="col-sm-4" style="background-color: #1ABC9C;text-align: center;padding-top: 1%;padding-bottom: 1%;">
+            <a class="productanchor" href="#swissetag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Swisse</h1></a>
+        </div>
+        <div class="col-sm-4" style="background-color: #2980B9;text-align: center;padding-top: 1%;padding-bottom: 1%;">
+            <a class="productanchor" href="#blackmorestag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Blackmores</h1></a>
+        </div>
+        <div class="col-sm-4" style="background-color: #E74C3C;text-align: center;padding-top: 1%;padding-bottom: 1%;">
+            <a class="productanchor" href="#otherbrandtag"><h1 style="color:black;font-weight: 100;margin-top: 10px;">Other brands</h1></a>
+        </div>
     </div>
-    <div class="col-sm-12">
-    	
+    <div class="col-sm-12 tbborder  " style="border-top-color: rgba(26,188,156,0.5);border-bottom-color: rgba(26,188,156,0.5);background-color: rgba(26,188,156,0.3);">
+        <h1 id="swissetag" style="margin-left: 3%;color: black;font-weight: 100;">Swisse</h1>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 wrapper">
+            <div class="row">
+
+                {% for post in site.tags.swisse %}
+                 <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" style="border-radius: 20px;border-color: rgba(26,188,156,0.8);border-width: 2px;margin-top: 5%;">
+                        <img class="img-rounded" src="{{ HOME_PATH }}assets/images/swisse/{{post.productimg}}" alt="...">
+                        <div class="caption">
+                            <h4 style="color:black;">{{post.productname}}</h3>
+                            <!-- <p>This is the decription of the Sleep tablets!!!</p> -->
+<!--                             <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+               
+
+            </div>
+        </div>
+        <div class="sol-sm-1"></div>
+    </div>
+    <div class="col-sm-12 tbborder" style="border-top-color: rgba(41,128,185,0.5);border-bottom-color: rgba(41,128,185,0.5);background-color: rgba(41,128,185,0.3);">
+        <h1 id="blackmorestag" style="margin-left: 3%;color: black;font-weight: 100;">Blackmores</h1>
+    </div>
+    <div class="col-sm-12 tbborder" style="border-top-color: rgba(231,76,60,0.5);border-bottom-color: rgba(231,76,60,0.5);background-color: rgba(231,76,60,0.3);">
+        <h1 id="otherbrandtag" style="margin-left: 3%;color: black;font-weight: 100;">Other brands</h1>
     </div>
 </div>
