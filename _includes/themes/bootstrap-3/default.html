@@ -16,6 +16,7 @@
     <!-- Optional theme -->
     <!--     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"> -->
     <link href="{{ ASSET_PATH }}/css/modify.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/hint.min.css" rel="stylesheet">
     <!-- Sticky Footer -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
     <!-- Custom styles -->
@@ -80,7 +81,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     {% for language in site.languages%}
                       {% if language != page.language %}
-                        <li><a href="/{{language}}/{{page.url_no_language}}">简体中文</a></li>
+                        <li><a href="/{{language}}/{{page.url_no_language}}"><span class="hint--left hint--success hint--rounded" data-hint="点击切换语言">简体中文</span></a></li>
                       {% endif %}
                     {% endfor %}
       </ul>

@@ -122,7 +122,7 @@ tagline: Supporting tagline
                     <div class="col-xs-6 blockstyle">
                         <h1 class="pictext" style="color:black;">Swift</h1>
                     </div>
-                    <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/cbg1.jpg') no-repeat;">
+                    <div class="col-xs-6 gray blockstyle" style="background:url('{{ HOME_PATH }}assets/images/ca1.jpg') no-repeat;">
                         <h1 class="pictext">Fast delivery</h1>
                     </div>
                 </div>
